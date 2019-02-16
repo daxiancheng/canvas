@@ -6,9 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>canvas</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1.5em; height: 1.5em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <canvas id="xxx" width="300px" height="300px"></canvas>
+        <div id="action" class="action">
+                <svg class="icon" aria-hidden="true" id="brush">
+                    <use xlink:href="#icon-brush_fill"></use>
+                </svg>
+                <svg class="icon" aria-hidden="true" id="eraser">
+                    <use xlink:href="#icon-eraser"></use>
+                </svg>
+            </div>
+    <canvas id="canvas" width="300px" height="300px"></canvas>
+   
+    <script src="//at.alicdn.com/t/font_1047147_6jtqd7p5an4.js"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
